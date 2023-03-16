@@ -1,4 +1,4 @@
-# Compiled class file
+npm # Compiled class file
 *.class
 
 # Log file
@@ -11,8 +11,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
-*.war
 *.nar
 *.ear
 *.zip
