@@ -30,7 +30,7 @@ function Login() {
                         <TextField 
                             variant="outlined"
                             required
-                            fullwidth={true}
+                            fullwidth
                             id="username"
                             label="아아디"
                             name="username"
@@ -41,7 +41,7 @@ function Login() {
                         <TextField
                             variant="outlined"
                             required
-                            fullwidth={true}
+                            fullwidth
                             name="password"
                             label="패스워드"
                             type="password"
@@ -50,7 +50,7 @@ function Login() {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" fullwidth={true} variant="contained" color="primary">
+                        <Button type="submit" fullwidth variant="contained" color="primary">
                             로그인
                         </Button>
                     </Grid>

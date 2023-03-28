@@ -35,7 +35,7 @@ return (
                         name="username"
                         variant="outlined"
                         required
-                        fullwidth={true}
+                        fullwidth
                         id="username"
                         label="아이디"
                         autoFocus
@@ -45,7 +45,7 @@ return (
                     <TextField
                         variant="outlined"
                         required
-                        fullwidth={true}
+                        fullwidth
                         name="password"
                         label="패스워드"
                         type="password"
@@ -56,7 +56,7 @@ return (
                 <Grid item xs={12}>
                     <Button
                         type="submit"
-                        fullwidth={true}
+                        fullwidth
                         variant="contained"
                         color="primary"
                     >

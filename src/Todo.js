@@ -68,7 +68,7 @@ const Todo = (props) => {
                     name={item.id}
                     value={item.title}
                     multiline={true}
-                    fullwidth={true}
+                    fullwidth
                  />
             </ListItemText>
             <ListItemSecondaryAction>
