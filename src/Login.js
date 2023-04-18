@@ -1,9 +1,14 @@
 import React from "react";
 import { Container, Grid, Typography, TextField, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import { signin } from "./service/ApiService"
+import { signin, socialLogin } from "./service/ApiService"
 
 function Login() {
+    const handleSocialLogin = (provider) => {
+        console.log("provider:" + provider);
+        socialLogin(provider);
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.target);
@@ -52,6 +57,11 @@ function Login() {
                     <Grid item xs={12}>
                         <Button type="submit" fullwidth variant="contained" color="primary">
                             로그인
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button onClick={() => handleSocialLogin("github")} fullwidth variant="contained" style={{backgroundColor: '#000'}}>
+                            깃허브로 로그인하기
                         </Button>
                     </Grid>
                     <Grid item>

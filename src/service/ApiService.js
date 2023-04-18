@@ -1,5 +1,6 @@
 import { API_BASE_URL } from "../app-config";
 
+
 export function call(api, method, request) {
   let headers= new Headers({
     "Content-Type": "application/json",
@@ -60,4 +61,9 @@ export function signout() {
 
 export function signup(userDTO) {
   return call("/auth/signup","POST",userDTO);
+}
+
+export function socialLogin(provider){
+  const frontendUrl = window.location.protocol + "//" + window.location.host ;
+  window.location.href = API_BASE_URL + "/auth/authorize/" + provider + "?redirect_url=" + frontendUrl;
 }
